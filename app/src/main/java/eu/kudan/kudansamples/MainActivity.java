@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ARAPIKey key = ARAPIKey.getInstance();
         key.setAPIKey("GAWAE-FBVCC-XA8ST-GQVZV-93PQB-X7SBD-P6V4W-6RS9C-CQRLH-78YEU-385XP-T6MCG-2CNWB-YK8SR-8UUQ");
-
+        permissionsRequest();
     }
 
     // Requests app permissions
@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
             case 111: {
                 if (grantResults.length > 0 && grantResults[0]== PackageManager.PERMISSION_GRANTED ) {

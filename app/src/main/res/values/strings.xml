@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">kudansamples</string>
+
+    <string name="is_detecting">Has detected</string>
+    <string name="is_tracking">Is tracking</string>
+    <string name="is_lost">Detection lost</string>
 </resources>
